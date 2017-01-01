@@ -1,7 +1,7 @@
 jQuery ->
   # need to put actual key for token generation
-  Stripe.setPublishableKey('pk_test_6pRNASCoBOKtIshFeQd4XMUh');
-
+  Stripe.setPublishableKey($("meta[name='stripe-key']").attr("content"))
+  
   $('#payment-form').submit(event) ->
     $form = $(this)
     $form.find('button').prop 'disabled', true

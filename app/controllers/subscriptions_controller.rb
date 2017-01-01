@@ -11,7 +11,11 @@ class SubscriptionsController < ApplicationController
   end
 
   def create
-    #code
+    customer = Stripe::Customer.create(
+      email: current_user.email,
+      source: params[:stripeToken],
+      plan: 'monthly' #need to be created at dashboard at stripe.com
+    )
   end
 
   def destroy
