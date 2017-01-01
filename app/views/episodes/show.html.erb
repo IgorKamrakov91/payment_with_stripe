@@ -9,4 +9,9 @@
   <strong>Description:</strong>
   <%= @episode.description %>
 </p>
-<%= link_to 'Subscribe to Watch', new_subscription_path, class: 'btn btn-secondary' %>
+
+<% if current_user_subscribed? %>
+  Our secret video
+<% else %>
+  <%= link_to 'Subscribe to Watch', new_subscription_path, class: 'btn btn-secondary' %>
+<% end %>
