@@ -4,3 +4,9 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+SubscriptionsController	/home/igor/Rails/gorails/stripe/app/controllers/subscriptions_controller.rb	/^class SubscriptionsController < ApplicationController$/;"	class	line:1
+show	/home/igor/Rails/gorails/stripe/app/controllers/subscriptions_controller.rb	/^  def show$/;"	method	line:5	class:SubscriptionsController
+new	/home/igor/Rails/gorails/stripe/app/controllers/subscriptions_controller.rb	/^  def new$/;"	method	line:9	class:SubscriptionsController
+create	/home/igor/Rails/gorails/stripe/app/controllers/subscriptions_controller.rb	/^  def create$/;"	method	line:13	class:SubscriptionsController
+destroy	/home/igor/Rails/gorails/stripe/app/controllers/subscriptions_controller.rb	/^  def destroy$/;"	method	line:41
+redirect_to_signup	/home/igor/Rails/gorails/stripe/app/controllers/subscriptions_controller.rb	/^  def redirect_to_signup$/;"	method	line:50

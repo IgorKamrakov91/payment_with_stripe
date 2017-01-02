@@ -21,14 +21,19 @@ class SubscriptionsController < ApplicationController
       plan: 'monthly' #need to be created at dashboard at stripe.com
     )
 
-    current_user.update(
+    options = {
       stripe_id: customer.id,
-      stripe_subscription_id: subscription.id,
+      stripe_subscription_id: subscription.id
+    }
+
+    options.merge!(
       card_last4: params[:card_last4],
       card_exp_month: params[:card_exp_month],
       card_exp_year: params[:card_exp_year],
       card_type: params[:card_brand]
-    )
+    ) if params[:card_last4]
+
+    current_user.update(options)
 
     redirect_to root_path
   end

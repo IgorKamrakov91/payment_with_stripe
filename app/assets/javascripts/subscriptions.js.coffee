@@ -4,9 +4,18 @@ jQuery ->
 
   $('#payment-form').submit(event) ->
     $form = $(this)
-    $form.find('button').prop 'disabled', true
-    Stripe.card.createToken $form, stripeResponseHandler
+
+    if $(".card-fields").hasClass("hidden")
+      # use the default card
+      $form.get(0).submit()
+    else
+      $form.find('button').prop 'disabled', true
+      Stripe.card.createToken $form, stripeResponseHandler
+
     false
+  $('.use-different-card').on 'click' ->
+    $('.card-on-file').hide()
+    $('.card-fields').removeClass("hidden")
 
 stripeResponseHandler = (status, response) ->
   # Grab the form:

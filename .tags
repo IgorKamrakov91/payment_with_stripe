@@ -1,1 +1,10 @@
 CardsController	/home/igor/Rails/gorails/stripe/app/controllers/cards_controller.rb	/^class CardsController < ApplicationController$/;"	class	line:1
+ApplicationHelper	/home/igor/Rails/gorails/stripe/app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	module	line:1
+card_fields_class	/home/igor/Rails/gorails/stripe/app/helpers/application_helper.rb	/^  def card_fields_class$/;"	method	line:2	class:ApplicationHelper
+stripeResponseHandler	/home/igor/Rails/gorails/stripe/app/assets/javascripts/subscriptions.js.coffee	/^stripeResponseHandler = (status, response) ->$/;"	function	line:20
+SubscriptionsController	/home/igor/Rails/gorails/stripe/app/controllers/subscriptions_controller.rb	/^class SubscriptionsController < ApplicationController$/;"	class	line:1
+show	/home/igor/Rails/gorails/stripe/app/controllers/subscriptions_controller.rb	/^  def show$/;"	method	line:5	class:SubscriptionsController
+new	/home/igor/Rails/gorails/stripe/app/controllers/subscriptions_controller.rb	/^  def new$/;"	method	line:9	class:SubscriptionsController
+create	/home/igor/Rails/gorails/stripe/app/controllers/subscriptions_controller.rb	/^  def create$/;"	method	line:13	class:SubscriptionsController
+destroy	/home/igor/Rails/gorails/stripe/app/controllers/subscriptions_controller.rb	/^  def destroy$/;"	method	line:41
+redirect_to_signup	/home/igor/Rails/gorails/stripe/app/controllers/subscriptions_controller.rb	/^  def redirect_to_signup$/;"	method	line:50
